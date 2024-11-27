@@ -1,0 +1,49 @@
+{
+  "name": "John Doe",
+  "address": {
+    "street": "Main St",
+    "street_number": 123,
+    "floor": "2nd",
+    "door": "A",
+    "city": "Barcelona",
+    "zip_code": "08001",
+    "country": "Spain"
+  },
+  "phone": "123456789",
+  "email": "john.doe@example.com",
+  "registered_at": "2024-11-23T10:00:00Z",
+  "recommended_by": null,
+  "sales": [
+    {
+      "glasses": {
+        "provider": {
+          "name": "Optical Shop",
+          "address": {
+            "street": "Optical Ave",
+            "street_number": 45,
+            "floor": "1st",
+            "door": "B",
+            "city": "Barcelona",
+            "zip_code": "08002",
+            "country": "Spain"
+          },
+          "phone": "987654321",
+          "fax": "987654322",
+          "nif": "B12345678"
+        },
+        "brand": "BrandX",
+        "left_graduation": -1.25,
+        "right_graduation": -1.00,
+        "frame_type": "metal",
+        "frame_color": "black",
+        "left_glass_color": "clear",
+        "right_glass_color": "clear",
+        "price": 100.50
+      },
+      "employee": {
+        "name": "Jane Smith"
+      },
+      "sold_at": "2024-11-22T15:00:00Z"
+    }
+  ]
+}

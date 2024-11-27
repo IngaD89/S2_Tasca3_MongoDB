@@ -1,0 +1,198 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "name",
+      "address",
+      "phone",
+      "email",
+      "registered_at"
+    ],
+    "properties": {
+      "name": {
+        "bsonType": "string"
+      },
+      "address": {
+        "bsonType": "object",
+        "required": [
+          "street",
+          "street_number",
+          "floor",
+          "door",
+          "city",
+          "zip_code",
+          "country"
+        ],
+        "properties": {
+          "street": {
+            "bsonType": "string"
+          },
+          "street_number": {
+            "bsonType": "int",
+            "minimum": 1,
+            "description": "El número de calle debe ser un entero mayor o igual a 1."
+          },
+          "floor": {
+            "bsonType": "string"
+          },
+          "door": {
+            "bsonType": "string"
+          },
+          "city": {
+            "bsonType": "string"
+          },
+          "zip_code": {
+            "bsonType": "string"
+          },
+          "country": {
+            "bsonType": "string"
+          }
+        }
+      },
+      "phone": {
+        "bsonType": "string"
+      },
+      "email": {
+        "bsonType": "string"
+      },
+      "registered_at": {
+        "bsonType": "date"
+      },
+      "recommended_by": {
+        "bsonType": "objectId",
+        "description": "Referencia al cliente que lo recomendó"
+      },
+      "sales": {
+        "bsonType": "object",
+        "required": [
+          "glasses",
+          "employee",
+          "sold_at"
+        ],
+        "properties": {
+          "glasses": {
+            "bsonType": "object",
+            "required": [
+              "provider",
+              "brand",
+              "left_graduation",
+              "right_graduation",
+              "frame_type",
+              "frame_color",
+              "left_glass_color",
+              "right_glass_color",
+              "price"
+            ],
+            "properties": {
+              "provider": {
+                "bsonType": "object",
+                "required": [
+                  "name",
+                  "address",
+                  "phone",
+                  "fax",
+                  "nif"
+                ],
+                "properties": {
+                  "name": {
+                    "bsonType": "string"
+                  },
+                  "address": {
+                    "bsonType": "object",
+                    "required": [
+                      "street",
+                      "street_number",
+                      "floor",
+                      "door",
+                      "city",
+                      "zip_code",
+                      "country"
+                    ],
+                    "properties": {
+                      "street": {
+                        "bsonType": "string"
+                      },
+                      "street_number": {
+                        "bsonType": "int",
+                        "minimum": 1,
+                        "description": "El número de calle debe ser un entero mayor o igual a 1."
+                      },
+                      "floor": {
+                        "bsonType": "string"
+                      },
+                      "door": {
+                        "bsonType": "string"
+                      },
+                      "city": {
+                        "bsonType": "string"
+                      },
+                      "zip_code": {
+                        "bsonType": "string"
+                      },
+                      "country": {
+                        "bsonType": "string"
+                      }
+                    },
+                    "description": "La dirección es obligatoria y debe incluir calle y número."
+                  },
+                  "phone": {
+                    "bsonType": "string"
+                  },
+                  "fax": {
+                    "bsonType": "string"
+                  },
+                  "nif": {
+                    "bsonType": "string"
+                  }
+                }
+              },
+              "brand": {
+                "bsonType": "string"
+              },
+              "left_graduation": {
+                "bsonType": "double"
+              },
+              "right_graduation": {
+                "bsonType": "double"
+              },
+              "frame_type": {
+                "bsonType": "string",
+                "enum": [
+                  "floating",
+                  "paste",
+                  "metal"
+                ]
+              },
+              "frame_color": {
+                "bsonType": "string"
+              },
+              "left_glass_color": {
+                "bsonType": "string"
+              },
+              "right_glass_color": {
+                "bsonType": "string"
+              },
+              "price": {
+                "bsonType": "double"
+              }
+            }
+          },
+          "employee": {
+            "bsonType": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "bsonType": "string"
+              }
+            }
+          },
+          "sold_at": {
+            "bsonType": "date"
+          }
+        }
+      }
+    }
+  }
+}

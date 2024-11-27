@@ -1,0 +1,35 @@
+{
+  "glasses": {
+    "brand": "Raibans",
+    "frame_type": "Metallic",
+    "provider": {
+      "name": "Googles associated SL",
+      "address": {
+        "street": "123 Main Street",
+        "street_number": "32b",
+        "floor": "ground floor",
+        "door": "2A",
+        "zip_code": "123456_Z",
+        "city": "Greenwood Hills"
+      },
+      "phone": "123456",
+      "fax": "12345",
+      "nif": "12345678A"
+    },
+    "price": 60.99
+  },
+  "client": {
+    "name": "Inga",
+    "last_name": "Demetrashvili",
+    "phone": "12344566",
+    "email": "i.d.1@gmail.com",
+    "address": {
+      "street": "123 Main Street",
+      "street_number": "32b",
+      "floor": "ground floor",
+      "door": "2A",
+      "zip_code": "123456_Z",
+      "city": "Greenwood Hills"
+    }
+  }
+}
